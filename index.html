@@ -1,646 +1,441 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Home 1</title>
-     <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-     <script src="https://kit.fontawesome.com/f95624662f.js" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="./src/css/owl.carousel.min.css">
-     <link rel="stylesheet" href="./src/css/main-grid.css">
-     <link rel="stylesheet" href="./src/css/slicknav.min.css">
-     <link rel="stylesheet" href="./src/css/style.css">
-     <link rel="stylesheet" href="./src/css/responsive.css">
-     <link rel="stylesheet" href="./src/css/colornip.min.css">
-     <link id="theme" rel="stylesheet" href="./src/themes/theme-default.css">
-
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Raleway:300,400,600|PT+Serif:700&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/f95624662f.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home | Welcome To Saif's Portfolio</title>
 </head>
+<body class="home" oncontextmenu="return false;">
 
-<body id="body">
+    <!-- Contact Form -->
+    <div class="form__wrapper">
+        <div class="form__left">
+            <div class="form__info">
+                <div class="form__info-img"></div>
+                <h3 class="form__info-author">Saif Hasan</h3>
+                <h3 class="form__info-skill">Web Designer &nbsp; | &nbsp; Developer</h3>
+                <div>
+                    <a href="https://facebook.com/iamsaif6" class="offcanvas__social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/iamsaif6" class="offcanvas__social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/iamsaif6" class="offcanvas__social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/iamsaif6" class="offcanvas__social-link"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="form__right">
+            <a href="#" class="form__close">&times;</a>
+            <form class="form" action="#" method="POST" data-netlify="true">
+                <h2 class="form__header">Contact US !</h2>
+                <div class="form__group">
+                    <input class="form__input" type="text" placeholder="Full Name" id="name" autocomplete="off" required name="Client Name">
+                    <label class="form__label" for="name">Full Name</label>
+                </div>
 
-     <div class="Switcher">
-          <button id="Switcher__control" class="Switcher__control">
-               <i class="fas fa-eye-dropper"></i>
-          </button>
-          <h5 style="margin-bottom: 5px">Change Color</h5>
-          <ul id="colors" data-dir="./src/themes/">
-              <li data-scheme="theme-default" data-color="#EF476F"></li>
-              <li data-scheme="theme-purple" data-color="#9b59b6"></li>
-              <li data-scheme="theme-blue" data-color="#3498db"></li>
-              <li data-scheme="theme-green" data-color="#2ecc71"></li>
-              <li data-scheme="theme-sky" data-color="#3c40c6"></li>
-              <li data-scheme="theme-gray" data-color="#3d3d3d"></li>
-              <li data-scheme="theme-red" data-color="#ff3838"></li>
-              <li data-scheme="theme-pumkin" data-color="#d35400"></li>
-              <li data-scheme="theme-mid-blue" data-color="#2c3e50"></li>
-              <li data-scheme="theme-innendo" data-color="#a5b1c2"></li>
-          </ul>
+                <div class="form__group">
+                    <input class="form__input" type="text" placeholder="Project Name" id="project" autocomplete="off" required name="Project Name">
+                    <label class="form__label" for="project">Project Name</label>
+                </div>
 
-      </div>
+                <div class="form__group">
+                    <input class="form__input" type="email" placeholder="Your Email" id="email" autocomplete="off" required name="Email">
+                    <label class="form__label" for="email">Your Email</label>
+                </div>
+                <button type="submit" class="btn form__btn">Submit</button>
+            </form>
+        </div>
+    </div>
 
+    <!-- Preloader -->
 
-     <!-- Nav Area -->
+    <div class="preloader">
+        <!--Background Image Add in preloader-spinner Class -->
+        <div class="preloader-spinner"></div>
+    </div>
 
-     <nav>
-          <div class="row">
-               <div class="col span_2_of_12">
-                    <div class="logo">
-                         <a href="index.html"><img src="./src/img/logo.png" alt=""></a>
+    <!-- ########################
+         Offcanvas Menu
+    ############################## -->
+
+    <div class="offcanvas__overlay"></div>
+
+    <div class="offcanvas__wrap">
+        <div class="navbar__logo">
+            <span>P</span>ortfolio
+        </div>
+        <div class="offcanvas__img">
+            <div class="offcanvas__close-btn">&times;</div>
+        </div>
+        <ul class="offcanvas__list">
+            <li class="offcanvas__item"><a href="https://iamsaif.netlify.app/" class="offcanvas__link">Home</a></li>
+            <li class="offcanvas__item"><a href="https://iamsaif.netlify.app/work.html" class="offcanvas__link">Projects</a></li>
+            <li class="offcanvas__item"><a href="https://iamsaif.netlify.app/about-me.html" class="offcanvas__link">About Me</a></li>
+            <button class="btn form__trigger">hire me!</button>
+        </ul>
+
+        <div class="offcanvas__social">
+            <a href="https://facebook.com/iamsaif6" class="offcanvas__social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/iamsaif6" class="offcanvas__social-link"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/iamsaif6" class="offcanvas__social-link"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/iamsaif6" class="offcanvas__social-link"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+
+    <!-- ########################
+            Header Section
+    ############################## -->
+    <header class="header">
+        <div class="sticky">
+        <div class="row">
+            <nav class="navbar">
+                <div class="navbar__logo">
+                    <span>P</span>ortfolio
+                </div>
+                <div class="offcanvas__trigger-wrap">
+                    <div class="offcanvas__trigger"></div>
+                </div>
+                <ul class="navbar__list">
+                    <li class="navbar__item"><a href="index.html" class="navbar__link navbar__link--active">home</a></li>
+                    <li class="navbar__item"><a href="work.html" class="navbar__link">projects</a></li>
+                    <li class="navbar__item"><a href="about-me.html" class="navbar__link">about me</a></li>
+                    <button class="btn form__trigger">hire me!</button>
+                </ul>
+            </nav>
+        </div>
+        </div>
+        <div class="row row__fullwidth header__hero-box">
+            <div class="col-1-of-2">
+                <img src="img/header4.png" alt="" class="header__picture wow fadeIn">
+            </div>
+            <div class="col-1-of-2">
+                <div class="header__text-box ">
+                    <h3 class="header__subtitle">Hello, I’m Saif</h3>
+                    <h1 class="header__title" >Expert in Web Design &amp; <br> <span id="simpleUsage"></span></h1>
+                    <p class="description">Currently available for select projects, collaborations and consulting.Currently available for select projects, collaborations and consulting.</p>
+                    <a href="work.html" class="btn btn--solid">see my work <i class="fas fa-laptop-code"></i></a>
+                </div>
+                <!-- Expert in Web Design &amp; Development -->
+            </div>
+        </div>
+    </header>
+
+        <!-- ########################
+            Services Section
+    ############################## -->
+
+    <section class="service" id="service">
+        <div class="text-center">
+            <h3 class="secondary-heading">Services</h3>
+        </div>
+        <div class="row ">
+            <div class="col-1-of-3">
+                <div class="service__box">
+                    <i class="fas fa-palette service__logo"></i>
+                    <h3 class="service__heading">Web design</h3>
+                    <p class="description">Well we're movin' on up to the east side. To a deluxe apartment in the sky.</p>
+                </div>
+            </div>
+
+            <div class="col-1-of-3">
+                <div class="service__box">
+                    <i class="fab fa-wordpress-simple service__logo"></i>
+                    <h3 class="service__heading">Theme Customization</h3>
+                    <p class="description">Well we're movin' on up to the east side. To a deluxe apartment in the sky.</p>
+                </div>
+            </div>
+
+            <div class="col-1-of-3">
+                <div class="service__box">
+                    <i class="fas fa-code service__logo"></i>
+                    <h3 class="service__heading">web Development</h3>
+                    <p class="description">Well we're movin' on up to the east side. To a deluxe apartment in the sky.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ########################
+            Skill Section
+    ############################## -->
+    <section class="skill" id="skill">
+        <div class="text-center">
+            <h3 class="secondary-heading secondary-heading--skill">Skills</h3>
+        </div>
+        <div class="row">
+        <div class="skill__flex">
+            <div class="skill__left">
+                <div class="skill__bar-wrap">
+                    <div class="skill__bar-single">
+                        <h4 class="skill__name"><i class="fab fa-adobe"></i> Adobe Photoshop / XD </h4>
+                        <div id="bar6" class="barfiller">
+                            <span class="tip"></span>
+                            <span class="fill" data-percentage="90"></span>
+                        </div>
                     </div>
-               </div>
-               <div class="col span_8_of_12">
-                    <ul class="main-nav" id="menu-slick">
-                         <li><a href="./index.html">home</a>
-                              <ul class="dropdown">
-                                   <li><a href="./home2.html">Home Page V2</a></li>
-                                   <li><a href="./home3.html">Home Page V3</a></li>
-                                   <li><a href="./home-4.html">Home Page V4</a></li>
-                              </ul>
-                         </li>
-                         <li><a href="./about-us.html">About</a></li>
-                         <li><a href="./servies-detail.html">servies</a>
-                              <ul class="dropdown">
-                                   <li><a href="./servies-v1.html">Services V1</a></li>
-                                   <li><a href="./servies-v2.html">Services V2</a></li>
-
-                              </ul>
-                         </li>
-                         <li><a href="./case-study-details.html">case studies</a>
-                              <ul class="dropdown">
-                                   <li><a href="./case-study-v1.html">Case Study V1</a></li>
-                                   <li><a href="./case-study-v2.html">Case Study V2</a></li>
-
-                              </ul>
-                         </li>
-                         <li><a href="#">Pages</a>
-                              <ul class="dropdown">
-                                   <li><a href="./team.html">team</a></li>
-                                   <li><a href="./faq.html">FAQ</a></li>
-                                   <li><a href="./pricing-table.html">Pricing</a></li>
-                                   <li><a href="./free-seo-analysis.html">seo analytics</a></li>
-
-                              </ul>
-                         </li>
-                         <li><a href="./blog.html">blog</a>
-                              <ul class="dropdown">
-                                   <li><a href="./single-blog.html">Single Blog Post</a></li>
-
-
-                              </ul>
-                         </li>
-                         <li><a href="#">contact</a>
-                              <ul class="dropdown">
-                                   <li><a href="./contact-us-v1.html">contact V1</a></li>
-                                   <li><a href="./contact-us-v2.html">contact V2</a></li>
-
-                              </ul>
-                         </li>
-                    </ul>
-               </div>
-               <div class="col span_2_of_12">
-                    <div class="nav-btn">
-                         <a href="./free-seo-analysis.html" class="btn btn-nav">Free SEO Analysis</a>
+                    <div class="skill__bar-single">
+                        <h4 class="skill__name"><i class="fab fa-html5"></i> HTML </h4>
+                        <div id="bar1" class="barfiller">
+                            <span class="tip"></span>
+                            <span class="fill" data-percentage="95"></span>
+                        </div>
                     </div>
-               </div>
-               
-          </div>
-          <div id="slick-wrapper"></div>
-     </nav>
-
-     <!-- Header Area -->
-
-     <header>
-          <div class="row">
-               <div class="col span_1_of_2">
-                    <div class="hero-area-wrap">
-                         <div class="hero-area-text">
-                              <h2>Business has only
-                                   two functions marketing
-                                   and innovation.</h2>
-
-                              <p>Traffic is a great platform to stand out your website. So try now.</p>
-
-                              <div class="hero-form">
-                                   <form action="./contact-us-v1.html">
-                                        <input class="jscolor" id="bg-change" onchange="myfun()" type="text"
-                                             placeholder="Your Website Link">
-                                        <input class="btn" type="submit" value="Get Free Analytics">
-                                   </form>
-                              </div>
-                         </div>
+                    <div class="skill__bar-single">
+                        <h4 class="skill__name"><i class="fab fa-css3"></i>CSS </h4>
+                        <div id="bar2" class="barfiller">
+                            <span class="tip"></span>
+                            <span class="fill" data-percentage="90"></span>
+                        </div>
                     </div>
-               </div>
-               <div class="col span_1_of_2">
-                    <div class="hero-area-wrap">
-                         <div class="hero-area-img">
-                              <img src="./src/img/hero0img.png" alt="">
-                         </div>
+
+                    <div class="skill__bar-single">
+                        <h4 class="skill__name"><i class="fab fa-sass"></i>SASS / SCSS </h4>
+                        <div id="bar3" class="barfiller">
+                            <span class="tip"></span>
+                            <span class="fill" data-percentage="80"></span>
+                        </div>
                     </div>
-               </div>
-          </div>
-     </header>
 
-     <!-- Servies Section -->
-     <section class="servies-section section-padding">
-          <div class="row">
-               <div class="col span_2_of_2">
-                    <div class="section-title">
-                         <h3>Some of Our Services</h3>
-                         <p class="description">Conveniently whiteboard ubiquitous niche markets and accurate
-                              collaboration. <br>
-                              Holisticly supply client-focused models B2B processes. </p>
+                    <div class="skill__bar-single">
+                        <h4 class="skill__name"><i class="fab fa-js-square"></i>JS / jQuery </h4>
+                        <div id="bar4" class="barfiller">
+                            <span class="tip"></span>
+                            <span class="fill" data-percentage="50"></span>
+                        </div>
                     </div>
-               </div>
-          </div>
 
-          <div class="row">
-               <div class="col span_1_of_3">
-                    <div class="single-servies-box">
-                         <div class="single-serviea-icon">
-                              <i class="fas fa-envelope-open-text"></i>
-                         </div>
-                         <h4>Online Marketing</h4>
-                         <p class="description">impact scalab niche markets rather than collabora
-                              Interactively optimize fully tested data with
-                              Dramatically grow enterprise-wide
-                         </p>
-                         <a class="servies-btn" href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
-
+                    <div class="skill__bar-single">
+                        <h4 class="skill__name"><i class="fab fa-wordpress"></i>WordPress Customization </h4>
+                        <div id="bar5" class="barfiller">
+                            <span class="tip"></span>
+                            <span class="fill" data-percentage="70"></span>
+                        </div>
                     </div>
-               </div>
-               <div class="col span_1_of_3">
-                    <div class="single-servies-box">
-                         <div class="single-serviea-icon">
-                              <i class="fab fa-soundcloud"></i>
-                         </div>
-                         <h4>Marketing Research</h4>
-                         <p class="description">Professionally pontificate B2B innovation via low-risk
-                              high-yield information. Interactively reconceptualize
-                              flexible leadership
-                         </p>
-                         <a class="servies-btn" href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+            </div>
+            <div class="skill__right wow fadeIn" data-wow-delay=".3s">
+                    <img class="skill__img" src="img/skill.webp" alt=""> 
+            </div>
+        </div>
+        </div>
+    </section>
 
+     <!-- ########################
+         Portf0lio Section
+    ############################## -->
+    <section class="portfolio">
+        <div class="text-center">
+            <h3 class="secondary-heading secondary-heading--portfolio">portfolio</h3>
+        </div>
+        <div class="row">
+            <div class="portfolio__filter">
+                <button type="button" class="poftfolio__filter__button" data-filter="all">all</button>
+                <button type="button" data-filter=".app">app</button>
+                <button type="button" data-filter=".web">web</button>
+            </div>
+            <div class="portfolio__wrap">
+
+                <div class="mix portfolio__item web">
+                    <div class="portfolio__item--18"></div>
+                    <div class="portfolio__hover">
+                        <a class="portfolio__hover__link image-link" href="img/grid-11.webp"><i class="fas fa-search-plus"></i></a>
+                        <a class="portfolio__hover__link" href="https://96buks.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
                     </div>
-               </div>
-               <div class="col span_1_of_3">
-                    <div class="single-servies-box">
-                         <div class="single-serviea-icon">
-                              <i class="fas fa-desktop"></i>
-                         </div>
-                         <h4>Content Submission</h4>
-                         <p class="description">Interactively architect frictionless action items with
-                              extensive expertise. Phosfluorescently develop
-                              user friendly meta.
-                         </p>
-                         <a class="servies-btn" href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
 
+                <div class="mix portfolio__item web">
+                    <div class="portfolio__item--2"></div>
+                    <div class="portfolio__hover">
+                        <a class="portfolio__hover__link image-link" href="img/grid-12.webp"><i class="fas fa-search-plus"></i></a>
+                        <a class="portfolio__hover__link" href="https://ebook-22.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
                     </div>
-               </div>
+                </div>
 
-
-
-
-               <div class="col span_1_of_3">
-                    <div class="single-servies-box">
-                         <div class="single-serviea-icon">
-                              <i class="fas fa-chart-bar"></i>
-                         </div>
-                         <h4>Advanced Analytics</h4>
-                         <p class="description">Recaptiualize just in time alignments before
-                              accurate mindshare. enhance leveraged infomed
-                              without best-of-breed
-                              .
-                         </p>
-                         <a class="servies-btn" href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
-
+                <div class="mix portfolio__item web">
+                    <div class="portfolio__item--3"></div>
+                    <div class="portfolio__hover">
+                        <a class="portfolio__hover__link image-link" href="img/bootstrap2.webp"><i class="fas fa-search-plus"></i></a>
+                        <a class="portfolio__hover__link" href="https://hamzgolf.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
                     </div>
-               </div>
-               <div class="col span_1_of_3">
-                    <div class="single-servies-box">
-                         <div class="single-serviea-icon">
-                              <i class="fas fa-search-dollar"></i>
-                         </div>
-                         <h4>PPC Management</h4>
-                         <p class="description">Kectively underwhelm maintainable architectures
-                              through parallel process improvements.
-                              Rapidiously expedite user
-                         </p>
-                         <a class="servies-btn" href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
-
+                </div>
+                <div class="mix portfolio__item app">
+                    <div class="portfolio__item--4"></div>
+                    <div class="portfolio__hover">
+                        <a class="portfolio__hover__link image-link" href="img/app.webp"><i class="fas fa-search-plus"></i></a>
+                        <a class="portfolio__hover__link" href="https://trillo22.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
                     </div>
-               </div>
-               <div class="col span_1_of_3">
-                    <div class="single-servies-box">
-                         <div class="single-serviea-icon">
-                              <i class="fas fa-rocket"></i>
-                         </div>
-                         <h4>Social Media Services</h4>
-                         <p class="description"> Distinctively engage transparent networks without
-                              client-centric manufactured products.
-                              Monotonectally
-                         </p>
-                         <a class="servies-btn" href="#">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
-
+                </div>
+                <div class="mix portfolio__item app">
+                    <div class="portfolio__item--5"></div>
+                    <div class="portfolio__hover">
+                        <a class="portfolio__hover__link image-link" href="img/grid8.webp"><i class="fas fa-search-plus"></i></a>
+                        <a class="portfolio__hover__link" href="https://natours22.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
                     </div>
-               </div>
-          </div>
-
-
-          <div class="services-bottom">
-               <div class="row">
-                    <div class="col span_1_of_2">
-                         <div class="services-text-wrap">
-                              <div class="services-text">
-                                   <div class="section-title">
-                                        <h3>Transparency of Online Marketing
-                                             Efforts from us</h3>
-                                        <p class="description">Conveniently whiteboard ubiquitous niche markets and
-                                             accurate
-                                             collaboration and idea-sharing. Holisticly supply client-focused
-                                             models vis-a-vis B2B processes. </p>
-                                        <a href="#" class="btn">How it works</a>
-                                   </div>
-                              </div>
-                         </div>
+                </div>
+                <div class="mix portfolio__item app">
+                    <div class="portfolio__item--6"></div>
+                    <div class="portfolio__hover">
+                        <a class="portfolio__hover__link image-link" href="img/table.webp"><i class="fas fa-search-plus"></i></a>
+                        <a class="portfolio__hover__link" href="https://nexter22.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
                     </div>
-                    <div class="col span_1_of_2">
-                         <div class="sevies-img-wrap">
-                              <div class="servies-img">
-                                   <img src="./src/img/servies-img.png" alt="">
-                              </div>
-                         </div>
+                </div>
+
+                <div class="mix portfolio__item web">
+                    <div class="portfolio__item--17"></div>
+                    <div class="portfolio__hover">
+                        <a class="portfolio__hover__link image-link" href="img/grid10.webp"><i class="fas fa-search-plus"></i></a>
+                        <a class="portfolio__hover__link" href="https://agency002.netlify.app/" target="_blank"><i class="fas fa-link"></i></a>
                     </div>
-               </div>
-          </div>
-     </section>
+                </div>
 
-     <!-- Case Study Section -->
-
-     <section class="case-study-section gray-bg section-padding">
-          <div class="row">
-               <div class="col span_2_of_2">
-                    <div class="section-title">
-                         <h3>Some of Our Case Study</h3>
-                         <p class="description">Ollaboratively enable standards compliant value vis-a-vis e-business
-                              meta-services. <br>
-                              enhance end-to-end niches before integrated web services.
-                         </p>
+                <div class="mix portfolio__item web">
+                    <div class="portfolio__item--8"></div>
+                    <div class="portfolio__hover">
+                        <a class="portfolio__hover__link image-link" href="img/grid3.webp"><i class="fas fa-search-plus"></i></a>
+                        <a class="portfolio__hover__link" href="https://agency22.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
                     </div>
-               </div>
-          </div>
+                </div>
 
-
-          <div class="row">
-               <div class="col span_12_of_12">
-                    <div class="carosuel-wrapper owl-carousel">
-                         <div class="single-carousel-item">
-                              <div class="single-caroseul-wrapper bg-1">
-                                   <div class="single-caroseul-overlay">
-                                        <div class="single-carousel-cell">
-                                             <h4>icelolly.com</h4>
-                                             <h5>Analytics 360 improving business decisions</h5>
-                                             <p class="description">
-                                                  Seamlessly extend worldwide internal or organic
-                                                  sources vis- team driven outside box thinking.
-                                                  Proactively drive technically sound.
-
-                                             </p>
-
-                                             <a href="#"><i class="fa fa-arrow-right"></i></a>
-
-                                        </div>
-                                   </div>
-                              </div>
-                         </div>
-                         <div class="single-carousel-item">
-                              <div class="single-caroseul-wrapper bg-2">
-                                   <div class="single-caroseul-overlay">
-                                        <div class="single-carousel-cell">
-                                             <h4>icelolly.com</h4>
-                                             <h5>Analytics 360 improving business decisions</h5>
-                                             <p class="description">
-                                                  Seamlessly extend worldwide internal or organic
-                                                  sources vis- team driven outside box thinking.
-                                                  Proactively drive technically sound.
-
-                                             </p>
-
-                                             <a href="#"><i class="fa fa-arrow-right"></i></a>
-
-                                        </div>
-                                   </div>
-                              </div>
-                         </div>
-                         <div class="single-carousel-item">
-                              <div class="single-caroseul-wrapper bg-3">
-                                   <div class="single-caroseul-overlay">
-                                        <div class="single-carousel-cell">
-                                             <h4>icelolly.com</h4>
-                                             <h5>Analytics 360 improving business decisions</h5>
-                                             <p class="description">
-                                                  Seamlessly extend worldwide internal or organic
-                                                  sources vis- team driven outside box thinking.
-                                                  Proactively drive technically sound.
-
-                                             </p>
-
-                                             <a href="#"><i class="fa fa-arrow-right"></i></a>
-
-                                        </div>
-                                   </div>
-                              </div>
-                         </div>
-                         <div class="single-carousel-item">
-                              <div class="single-caroseul-wrapper bg-2">
-                                   <div class="single-caroseul-overlay">
-                                        <div class="single-carousel-cell">
-                                             <h4>icelolly.com</h4>
-                                             <h5>Analytics 360 improving business decisions</h5>
-                                             <p class="description">
-                                                  Seamlessly extend worldwide internal or organic
-                                                  sources vis- team driven outside box thinking.
-                                                  Proactively drive technically sound.
-
-                                             </p>
-
-                                             <a href="#"><i class="fa fa-arrow-right"></i></a>
-
-                                        </div>
-                                   </div>
-                              </div>
-                         </div>
+                <div class="mix portfolio__item web">
+                    <div class="portfolio__item--9"></div>
+                    <div class="portfolio__hover">
+                        <a class="portfolio__hover__link image-link" href="img/bootsrtap4.webp"><i class="fas fa-search-plus"></i></a>
+                        <a class="portfolio__hover__link" href="https://mizuxe33.netlify.app/" target="_blank"><i class="fas fa-link"></i></a>
                     </div>
-               </div>
-          </div>
-     </section>
+                </div>
+            </div>
+        </div>
 
-     <!-- Review Section -->
+        <div class="text-center"><a href="https://iamsaif.netlify.app/work.html" class="btn btn--load-more">Load more</a></div>
+    </section>
 
-     <section class="review-section section-padding">
-          <div class="row">
-               <div class="col span_2_of_2">
-                    <div class="review-crousel owl-carousel">
-                         <div class="single-review-carosuel">
-                              <p class="review-text">
-                                   " Ridiculously easy to use. We have been looking for an intuitive tool like this for
-                                   a while and this is just what we needed "
-                              </p>
+    <!-- ########################
+         CTA Section
+    ############################## -->
+    <section class="cta">
+        <div class="row">
+            <div class="cta__wrap">
+                <div class="cta__text wow fadeIn">
+                    <h2 class="cta__header">Make It Awesome!</h2>
+                    <p class="description">There's nothing we wont try. Never heard the word impossible. This time there's no stopping us. The year is 1987 and NASA launches the last of Americas deep space probes.</p>
+                </div>
+                <button class="btn cta__btn wow fadeIn form__trigger">hire me now!</button>
+            </div>
+        </div>
+    </section>
 
-                              <div class="review-img">
-                                   <img src="./src/img/review.png" alt="">
-                              </div>
-                              <p class="review-name">Mark McClendon</p>
-                              <p class="review-work">Partner & Executive Director, VML</p>
-                         </div>
-                         <div class="single-review-carosuel">
-                              <p class="review-text">
-                                   " Ridiculously easy to use. We have been looking for an intuitive tool like this for
-                                   a while and this is just what we needed "
-                              </p>
+    <!-- ########################
+         Review Section
+    ############################## -->
+    <section class="review">
+        <div class="row">
+            <div class="text-center">
+                <h1 class="review__header">What clients <br>  Feedback about me</h1>
+            </div>
+            <div class="review__carousel owl-carousel">
+                <div class="review__carousel-item">
+                    <img src="img/user.jpg" class="review__img review__img--1" alt="">
+                    <h4 class="review__name">Allen Bell</h4>
+                    <p class="review__skill">Ux Designer</p>
+                    <p class="review__text">
+                        Fleeing from the Cylon tyranny the last Battlestar – Galactica - leads a rag-tag fugitive fleet on a lonely quest - a shining planet known as Earth? Texas tea.Its mission - to explore strange new worlds to seek out new life and new civilizations to boldly go where no man has gone before. Doin' it our way.
+                    </p>
+                </div>
 
-                              <div class="review-img">
-                                   <img src="./src/img/review.png" alt="">
-                              </div>
-                              <p class="review-name">Mark McClendon</p>
-                              <p class="review-work">Partner & Executive Director, VML</p>
-                         </div>
-                         <div class="single-review-carosuel">
-                              <p class="review-text">
-                                   " Ridiculously easy to use. We have been looking for an intuitive tool like this for
-                                   a while and this is just what we needed "
-                              </p>
+                <div class="review__carousel-item">
+                    <img src="img/user-4.jpg" class="review__img review__img--2" alt="">
+                    <h4 class="review__name">kell wilimson</h4>
+                    <p class="review__skill">Ui Designer</p>
+                    <p class="review__text">
+                        Fleeing from the Cylon tyranny the last Battlestar – Galactica - leads a rag-tag fugitive fleet on a lonely quest - a shining planet known as Earth? Texas tea.Its mission - to explore strange new worlds to seek out new life and new civilizations to boldly go where no man has gone before. Doin' it our way.
+                    </p>
+                </div>
 
-                              <div class="review-img">
-                                   <img src="./src/img/review.png" alt="">
-                              </div>
-                              <p class="review-name">Mark McClendon</p>
-                              <p class="review-work">Partner & Executive Director, VML</p>
-                         </div>
-                    </div>
-               </div>
-          </div>
-     </section>
+                <div class="review__carousel-item">
+                    <img src="img/user-6.jpg" class="review__img review__img--2" alt="">
+                    <h4 class="review__name">lisa kudrow</h4>
+                    <p class="review__skill">web Designer</p>
+                    <p class="review__text">
+                        Fleeing from the Cylon tyranny the last Battlestar – Galactica - leads a rag-tag fugitive fleet on a lonely quest - a shining planet known as Earth? Texas tea.Its mission - to explore strange new worlds to seek out new life and new civilizations to boldly go where no man has gone before. Doin' it our way.
+                    </p>
+                </div>
 
-     <!-- CTA Section -->
-     <section class="cta-section">
-          <div class="row">
-               <div class="col span_7_of_12">
-                    <h2>Ready to improve your digital marketing efforts?</h2>
-               </div>
-               <div class="col span_5_of_12">
-                    <div class="cta-btn-wrap">
-                         <a href="./free-seo-analysis.html" class="btn">Get free Seo Analysis</a>
-                    </div>
-               </div>
-          </div>
-     </section>
+                <div class="review__carousel-item">
+                    <img src="img/user-5.jpg" class="review__img review__img--2" alt="">
+                    <h4 class="review__name">Allen Bell</h4>
+                    <p class="review__skill">Ux Designer</p>
+                    <p class="review__text">
+                        Fleeing from the Cylon tyranny the last Battlestar – Galactica - leads a rag-tag fugitive fleet on a lonely quest - a shining planet known as Earth? Texas tea.Its mission - to explore strange new worlds to seek out new life and new civilizations to boldly go where no man has gone before. Doin' it our way.
+                    </p>
+                </div>
 
+                <div class="review__carousel-item">
+                    <img src="img/testimonial-1.jpg" class="review__img review__img--2" alt="">
+                    <h4 class="review__name">Allen Bell</h4>
+                    <p class="review__skill">Ux Designer</p>
+                    <p class="review__text">
+                        Fleeing from the Cylon tyranny the last Battlestar – Galactica - leads a rag-tag fugitive fleet on a lonely quest - a shining planet known as Earth? Texas tea.Its mission - to explore strange new worlds to seek out new life and new civilizations to boldly go where no man has gone before. Doin' it our way.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-     <!-- Pricing Section -->
-     <section class="price-section section-padding">
-          <div class="row">
-               <div class="col span_2_of_2">
-                    <div class="section-title">
-                         <h3>Some of Our Best Pricing</h3>
-                         <p class="description">Seamlessly leverage existing extensible customer service for worldwide
-                              total <br>
-                              fashion future-proof alignments through leadership.
-                         </p>
-                    </div>
-               </div>
-          </div>
+    <!-- ########################
+         Footer Section
+    ############################## -->
 
-          <div class="row">
-               <div class="col span_1_of_3">
-                    <div class="single-price-wrapper">
-                         <p class="price-name">Basic</p>
-                         <p class="price">$29.99</p>
-                         <p class="price-time">per month</p>
-                         <ul>
-                              <li>Limited marketing & growth hacks</li>
-                              <li>5 Analytics Campaigns</li>
-                              <li>300 Keywords</li>
-                              <li>250,000 Crawled Pages</li>
-                              <li>Unlimited updates</li>
-                         </ul>
+    <footer class="footer">
+        <div class="row">
+            <ul class="footer__list">
+                <li class="footer__item"><a href="https://facebook.com/iamsaif6" target="_blank" class="footer__link"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="footer__item"><a  class="footer__link" href="https://twitter.com/iamsaif6" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li class="footer__item"><a  class="footer__link" href="https://instagram.com/iamsaif6" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li class="footer__item"><a  class="footer__link" href="https://github.com/iamsaif6" target="_blank"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
+        <p class="footer__text">Copyright &copy; 2020 . Portfolio By Saif Hasan</p>
+    </footer>
 
-                         <a href="./pricing-table.html" class="btn">Purchase Plan</a>
-                    </div>
-               </div>
-               <div class="col span_1_of_3">
-                    <div class="single-price-wrapper">
-                         <p class="price-name">Basic</p>
-                         <p class="price">$29.99</p>
-                         <p class="price-time">per month</p>
-                         <ul>
-                              <li>Limited marketing & growth hacks</li>
-                              <li>5 Analytics Campaigns</li>
-                              <li>300 Keywords</li>
-                              <li>250,000 Crawled Pages</li>
-                              <li>Unlimited updates</li>
-                         </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-                         <a href="./pricing-table.html" class="btn">Purchase Plan</a>
-                    </div>
-               </div>
-               <div class="col span_1_of_3">
-                    <div class="single-price-wrapper">
-                         <p class="price-name">Basic</p>
-                         <p class="price">$29.99</p>
-                         <p class="price-time">per month</p>
-                         <ul>
-                              <li>Limited marketing & growth hacks</li>
-                              <li>5 Analytics Campaigns</li>
-                              <li>300 Keywords</li>
-                              <li>250,000 Crawled Pages</li>
-                              <li>Unlimited updates</li>
-                         </ul>
+    <!-- Preloader -->
+    <script  type="text/javascript">
+        $('body').addClass('preloader-active');
 
-                         <a href="./pricing-table.html" class="btn">Purchase Plan</a>
-                    </div>
-               </div>
-          </div>
-     </section>
+        $(window).on('load', function() { 
+        $('.preloader').fadeOut();
+        $('.preloader-spinner').delay(350).fadeOut('slow');
+        $('body').delay(450).removeClass('preloader-active');
+        });
 
-     <!-- Brand logo -->
-     <section class="brand-logos">
-          <div class="row">
-               <div class="col span_1_of_6">
-                    <div class="brand-img-wrap">
-                         <div class="brand-img">
-                              <img src="./src/img/barand.png" alt="">
-                         </div>
-                    </div>
-               </div>
-               <div class="col span_1_of_6">
-                    <div class="brand-img-wrap">
-                         <div class="brand-img">
-                              <img src="./src/img/barand2.png" alt="">
-                         </div>
-                    </div>
-               </div>
-               <div class="col span_1_of_6">
-                    <div class="brand-img-wrap">
-                         <div class="brand-img">
-                              <img src="./src/img/barand3.png" alt="">
-                         </div>
-                    </div>
-               </div>
-               <div class="col span_1_of_6">
-                    <div class="brand-img-wrap">
-                         <div class="brand-img">
-                              <img src="./src/img/barand4.png" alt="">
-                         </div>
-                    </div>
-               </div>
-               <div class="col span_1_of_6">
-                    <div class="brand-img-wrap">
-                         <div class="brand-img">
-                              <img src="./src/img/barand5.png" alt="">
-                         </div>
-                    </div>
-               </div>
-               <div class="col span_1_of_6">
-                    <div class="brand-img-wrap">
-                         <div class="brand-img">
-                              <img src="./src/img/barand6.png" alt="">
-                         </div>
-                    </div>
-               </div>
-          </div>
-     </section>
+    </script>
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+            (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/5eb25908a1bad90e54a218a4/default';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+            })();
+        </script>
+        <!--End of Tawk.to Script-->
 
-     <!-- Footer area -->
-
-     <footer class="section-padding light-bg">
-          <div class="row">
-               <div class="col span_8_of_12">
-                    <div class="row">
-                         <div class="col span_4_of_12">
-                              <div class="single-footer-link">
-                                   <h2>Product</h2>
-                                   <ul>
-                                        <li><a href="./about-us.html">Features</a></li>
-                                        <li><a href="./pricing-table.html">Pricing</a></li>
-                                        <li><a href="#">Customers</a></li>
-                                        <li><a href="#">Page Builder</a></li>
-                                        <li><a href="#">Whats New</a></li>
-                                   </ul>
-                              </div>
-                         </div>
-
-                         <div class="col span_4_of_12">
-                              <div class="single-footer-link">
-                                   <h2>Company</h2>
-                                   <ul>
-                                        <li><a href="./about-us.html">About Us</a></li>
-                                        <li><a href="#">Try Demo</a></li>
-                                        <li><a href="#">Terms of service</a></li>
-                                        <li><a href="#">Page Builder</a></li>
-                                        <li><a href="#">Privacy policy</a></li>
-                                   </ul>
-                              </div>
-                         </div>
-
-                         <div class="col span_4_of_12">
-                              <div class="single-footer-link">
-                                   <h2>Help Center</h2>
-                                   <ul>
-                                        <li><a href="#">Help Center</a></li>
-                                        <li><a href="#">Email Us</a></li>
-                                        <li><a href="#">Message Us</a></li>
-                                        <li><a href="#">Blog</a></li>
-                                        <li><a href="#">Whats New</a></li>
-                                   </ul>
-                              </div>
-                         </div>
-                    </div>
-               </div>
-               <div class="col span_4_of_12 footer-span">
-                    <div class="footer-form">
-                         <h2>Sign Up to Our Weekly Newslater</h2>
-                         <form action="#">
-                              <input type="email" placeholder="Email Address">
-                              <input type="submit" value="Sign Up">
-                         </form>
-                         <h2>Social</h2>
-                         <div class="social-link">
-                              <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a>
-                              <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
-                              <a href="#"><i class="fab fa-pinterest"></i>Pinterest</a>
-                              <a href="#"><i class="fab fa-linkedin"></i>Linkedin</a>
-                              <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
-                         </div>
-                    </div>
-               </div>
-          </div>
-     </footer>
-
-
-     <!-- Footer Bottom -->
-     <section class="footer-bottom">
-          <p class="description">&copy; Traffic 2020 All Right Reserved . Coded By Saif Hasan</p>
-     </section>
-
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-     <script src="./src/js/colornip.min.js"></script>
-     <script src="./src/js/html5shiv.min.js"></script>
-     <script src="./src/js/owl.carousel.min.js"></script>
-     <script src="./src/js/jscolor.js"></script>
-     <script src="./src/js/jquery.slicknav.min.js"></script>
-     <script src="./src/js/app.js"></script>
-     <script>
-          $(function () {
-               $('#menu-slick').slicknav({
-                    prependTo: '#slick-wrapper'
-               });
-          });
-     </script>
-
-    
-
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.barfiller.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
-
 </html>
