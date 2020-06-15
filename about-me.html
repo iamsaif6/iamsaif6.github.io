@@ -6,11 +6,36 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Raleway:300,400,600|PT+Serif:700&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/f95624662f.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Home | Welcome To Saif's Portfolio</title>
+    <link id="theme" rel="stylesheet">
+    <title>About Me | Welcome To Saif's Portfolio</title>
 </head>
 <body class="home" oncontextmenu="return false;">
+
+        <!-- Voice BTN -->
+        <div>
+            <button id="voice__srt" type="button" onclick="startArtyom()"><i class="fas fa-microphone-alt"></i></button>
+            <span id="output" style="font-size:20px;color:red !important;display: none;"></span>
+            <div id="commands-list" style="display: none;"></div>
+         </div>
+    
+
+            <!-- ###### Theme Changer ###### -->
+            <div class="theme__changer">
+                <button class="theme__light theme__btn active"><i class="fas fa-sun"></i></button>
+                <button class="theme__dark theme__btn"><i class="fas fa-moon"></i></button>
+            </div>
+    
+                <!-- ###### Theme Changer Dialoge Box ###### -->
+                <div class="dialoge__overlay"></div>
+                <div class="dialoge">
+                    <p class="dialoge__text">  <span class="dialoge__text__span"></span> Click right fixed button to change theme. Or you can control this website via voice command . Click the Mic button . <span class="command__title"> Dark Theme Commands :</span>  <span>Dark , Dark Mode , Night , Night Mode or Black.</span> <span class="command__title">Light Theme Commands :</span><span> Normal , Normal Mode , Light , Light Mode </span><span class="command__title"> Scroll Down :</span> <span> Down , Scroll Down , Bottom , Scroll Bottom. </span> <span class="command__title">Scroll Top :</span><span> Top , Scroll Top , Up , Scroll Up . </span><span class="command__title"> Go Another Page:</span><span> Just say the page name.</span> <span class="command__title">Reload or Refresh :</span><span> Reload , Refresh </span> <span class="command__title">Close Tab :</span><span> Close</span></p>
+                    <div>
+                        <button class="dialoge__close">I Agree</button>
+                        <button class="dialoge__quit">I Dont Agree</button>
+                    </div>
+                </div>
+    
 
             <!-- Contact Form -->
             <div class="form__wrapper">
@@ -107,7 +132,7 @@ Header Section
     About Section
     ############################## -->
     
-    <section class="about wow fadeIn">
+    <section class="about">
     <div class="row">
     <div class="about__wrap">
         <div class="about__left  " >
@@ -143,21 +168,21 @@ Header Section
 
 
     <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/5eb25908a1bad90e54a218a4/default';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
-        })();
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5eb25908a1bad90e54a218a4/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
     </script>
     <!--End of Tawk.to Script-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/wow.min.js"></script>
+    <script src="js/artyom.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
