@@ -1,63 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Raleway:300,400,600|PT+Serif:700&display=swap" rel="stylesheet"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Raleway:300,400,600|PT+Serif:700&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://kit.fontawesome.com/f95624662f.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link id="theme" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link id="theme" rel="stylesheet" />
     <title>Portfolios | Welcome To Saif's Portfolio</title>
-</head>
-<body class="portfolio__page" oncontextmenu="return false;">
+  </head>
+  <body class="portfolio__page" oncontextmenu="return false;">
+    <!-- ###### Theme Changer ###### -->
+    <div class="theme__changer">
+      <button class="theme__light theme__btn active"><i class="fas fa-sun"></i></button>
+      <button class="theme__dark theme__btn"><i class="fas fa-moon"></i></button>
+    </div>
 
-
-            <!-- ###### Theme Changer ###### -->
-            <div class="theme__changer">
-                <button class="theme__light theme__btn active"><i class="fas fa-sun"></i></button>
-                <button class="theme__dark theme__btn"><i class="fas fa-moon"></i></button>
-            </div>
- 
-
-        <!-- Contact Form -->
-        <div class="form__wrapper">
-            <div class="form__left">
-                <div class="form__info">
-                    <div class="form__info-img"></div>
-                    <h3 class="form__info-author">Saif Hasan</h3>
-                    <h3 class="form__info-skill">Web Designer &nbsp; | &nbsp; Developer</h3>
-                    <div>
-                        <a href="https://facebook.com/iamsaif6" class="offcanvas__social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com/iamsaif6" class="offcanvas__social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="https://instagram.com/iamsaif6" class="offcanvas__social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="https://github.com/iamsaif6" class="offcanvas__social-link"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="form__right">
-                <a href="#" class="form__close">&times;</a>
-                <form class="form" action="#" method="POST" data-netlify="true">
-                    <h2 class="form__header">Contact US !</h2>
-                    <div class="form__group">
-                        <input class="form__input" type="text" placeholder="Full Name" id="name" autocomplete="off" required name="Client Name">
-                        <label class="form__label" for="name">Full Name</label>
-                    </div>
-    
-                    <div class="form__group">
-                        <input class="form__input" type="text" placeholder="Project Name" id="project" autocomplete="off" required name="Project Name">
-                        <label class="form__label" for="project">Project Name</label>
-                    </div>
-    
-                    <div class="form__group">
-                        <input class="form__input" type="email" placeholder="Your Email" id="email" autocomplete="off" required name="Email">
-                        <label class="form__label" for="email">Your Email</label>
-                    </div>
-                    <button type="submit" class="btn form__btn">Submit</button>
-                </form>
-            </div>
+    <!-- Contact Form -->
+    <div class="form__wrapper">
+      <div class="form__left">
+        <div class="form__info">
+          <div class="form__info-img"></div>
+          <h3 class="form__info-author">Saif Hasan</h3>
+          <h3 class="form__info-skill">Web Designer &nbsp; | &nbsp; Developer</h3>
+          <div>
+            <a href="https://facebook.com/iamsaif6" class="offcanvas__social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/iamsaif6" class="offcanvas__social-link"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/iamsaif6" class="offcanvas__social-link"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/iamsaif6" class="offcanvas__social-link"><i class="fab fa-github"></i></a>
+          </div>
         </div>
+      </div>
+      <div class="form__right">
+        <a href="#" class="form__close">&times;</a>
+        <form class="form" action="#" method="POST" data-netlify="true">
+          <h2 class="form__header">Contact US !</h2>
+          <div class="form__group">
+            <input class="form__input" type="text" placeholder="Full Name" id="name" autocomplete="off" required name="Client Name" />
+            <label class="form__label" for="name">Full Name</label>
+          </div>
+
+          <div class="form__group">
+            <input
+              class="form__input"
+              type="text"
+              placeholder="Project Name"
+              id="project"
+              autocomplete="off"
+              required
+              name="Project Name"
+            />
+            <label class="form__label" for="project">Project Name</label>
+          </div>
+
+          <div class="form__group">
+            <input class="form__input" type="email" placeholder="Your Email" id="email" autocomplete="off" required name="Email" />
+            <label class="form__label" for="email">Your Email</label>
+          </div>
+          <button type="submit" class="btn form__btn">Submit</button>
+        </form>
+      </div>
+    </div>
 
     <!-- ########################
          Offcanvas Menu
@@ -66,258 +74,255 @@
     <div class="offcanvas__overlay"></div>
 
     <div class="offcanvas__wrap">
-        <div class="navbar__logo">
-            <span>P</span>ortfolio
-        </div>
-        <div class="offcanvas__img">
-            <div class="offcanvas__close-btn">&times;</div>
-        </div>
-        <ul class="offcanvas__list">
-            <li class="offcanvas__item"><a href="index.html" class="offcanvas__link">Home</a></li>
-            <li class="offcanvas__item"><a href="work.html" class="offcanvas__link">Projects</a></li>
-            <li class="offcanvas__item"><a href="about-me.html" class="offcanvas__link">About Me</a></li>
-            <button class="btn form__trigger">hire me!</button>
-        </ul>
+      <div class="navbar__logo"><span>P</span>ortfolio</div>
+      <div class="offcanvas__img">
+        <div class="offcanvas__close-btn">&times;</div>
+      </div>
+      <ul class="offcanvas__list">
+        <li class="offcanvas__item"><a href="index.html" class="offcanvas__link">Home</a></li>
+        <li class="offcanvas__item"><a href="work.html" class="offcanvas__link">Projects</a></li>
+        <li class="offcanvas__item"><a href="about-me.html" class="offcanvas__link">About Me</a></li>
+        <a href="img/Saif Hasan CV.pdf">
+          <button class="btn">Resume</button>
+        </a>
+      </ul>
 
-        <div class="offcanvas__social">
-            <a href="https://facebook.com/iamsaif6" class="offcanvas__social-link"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://twitter.com/iamsaif6" class="offcanvas__social-link"><i class="fab fa-twitter"></i></a>
-            <a href="https://instagram.com/iamsaif6" class="offcanvas__social-link"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/iamsaif6" class="offcanvas__social-link"><i class="fab fa-github"></i></a>
-        </div>
+      <div class="offcanvas__social">
+        <a href="https://facebook.com/iamsaif6" class="offcanvas__social-link"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/iamsaif6" class="offcanvas__social-link"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/iamsaif6" class="offcanvas__social-link"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/iamsaif6" class="offcanvas__social-link"><i class="fab fa-github"></i></a>
+      </div>
     </div>
 
     <!-- ########################
             Header Section
     ############################## -->
     <header class="header">
-        <div class="sticky">
+      <div class="sticky">
         <div class="row">
-            <nav class="navbar">
-                <div class="navbar__logo">
-                    <span>P</span>ortfolio
-                </div>
-                <div class="offcanvas__trigger-wrap">
-                    <div class="offcanvas__trigger"></div>
-                </div>
-                <ul class="navbar__list">
-                    <li class="navbar__item"><a href="index.html" class="navbar__link ">home</a></li>
-                    <li class="navbar__item"><a href="work.html" class="navbar__link navbar__link--active">projects</a></li>
-                    <li class="navbar__item"><a href="about-me.html" class="navbar__link">about me</a></li>
-                    <button class="btn form__trigger">hire me!</button>
-                </ul>
-            </nav>
+          <nav class="navbar">
+            <div class="navbar__logo"><span>P</span>ortfolio</div>
+            <div class="offcanvas__trigger-wrap">
+              <div class="offcanvas__trigger"></div>
+            </div>
+            <ul class="navbar__list">
+              <li class="navbar__item"><a href="index.html" class="navbar__link">home</a></li>
+              <li class="navbar__item"><a href="work.html" class="navbar__link navbar__link--active">projects</a></li>
+              <li class="navbar__item"><a href="about-me.html" class="navbar__link">about me</a></li>
+              <a href="img/Saif Hasan CV.pdf">
+                <button class="btn">Resume</button>
+              </a>
+            </ul>
+          </nav>
         </div>
-        </div>
+      </div>
     </header>
 
-
-
-<!-- ########################
+    <!-- ########################
 Portfolio Section
 ############################## -->
-<section class="portfolio" id="service">
-    <div class="text-center">
-       <h3 class="secondary-heading secondary-heading--portfolio">portfolio</h3>
-    </div>
-    <div class="row">
-       <div class="portfolio__filter">
-           <button type="button" class="poftfolio__filter__button" data-filter="all">all</button>
-           <button type="button" data-filter=".app">app</button>
-           <button type="button" data-filter=".web">web</button>
-       </div>
-       <div class="portfolio__wrap">
-           <div class="mix portfolio__item web">
-               <div class="portfolio__item--1"></div>
-               <div class="portfolio__hover">
-                   <a class="portfolio__hover__link image-link" href="img/bootstrap6.webp"><i class="fas fa-search-plus"></i></a>
-                   <a class="portfolio__hover__link" href="https://silon22.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
-               </div>
-           </div>
-
-           <div class="mix portfolio__item web">
-                <div class="portfolio__item--2"></div>
-                <div class="portfolio__hover">
-                    <a class="portfolio__hover__link image-link" href="img/grid-12.webp"><i class="fas fa-search-plus"></i></a>
-                    <a class="portfolio__hover__link" href="https://ebook-22.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
-                </div>
+    <section class="portfolio" id="service">
+      <div class="text-center">
+        <h3 class="secondary-heading secondary-heading--portfolio">portfolio</h3>
+      </div>
+      <div class="row">
+        <div class="portfolio__filter">
+          <button type="button" class="poftfolio__filter__button" data-filter="all">all</button>
+          <button type="button" data-filter=".app">app</button>
+          <button type="button" data-filter=".web">web</button>
+        </div>
+        <div class="portfolio__wrap">
+          <div class="mix portfolio__item web">
+            <div class="portfolio__item--1"></div>
+            <div class="portfolio__hover">
+              <a class="portfolio__hover__link image-link" href="img/bootstrap6.webp"><i class="fas fa-search-plus"></i></a>
+              <a class="portfolio__hover__link" href="https://silon22.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
             </div>
+          </div>
 
-
-           <div class="mix portfolio__item web">
-               <div class="portfolio__item--3"></div>
-               <div class="portfolio__hover">
-                   <a class="portfolio__hover__link image-link" href="img/bootstrap2.webp"><i class="fas fa-search-plus"></i></a>
-                   <a class="portfolio__hover__link" href="https://hamzgolf.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
-               </div>
-           </div>
-
-           
-           <div class="mix portfolio__item web">
-                <div class="portfolio__item--18"></div>
-                <div class="portfolio__hover">
-                    <a class="portfolio__hover__link image-link" href="img/grid-11.webp"><i class="fas fa-search-plus"></i></a>
-                    <a class="portfolio__hover__link" href="https://96buks.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
-                </div>
+          <div class="mix portfolio__item web">
+            <div class="portfolio__item--2"></div>
+            <div class="portfolio__hover">
+              <a class="portfolio__hover__link image-link" href="img/grid-12.webp"><i class="fas fa-search-plus"></i></a>
+              <a class="portfolio__hover__link" href="https://ebook-22.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
             </div>
+          </div>
 
-
-           <div class="mix portfolio__item app">
-               <div class="portfolio__item--4"></div>
-               <div class="portfolio__hover">
-                   <a class="portfolio__hover__link image-link" href="img/app.webp"><i class="fas fa-search-plus"></i></a>
-                   <a class="portfolio__hover__link" href="https://trillo22.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
-               </div>
-           </div>
-           <div class="mix portfolio__item app">
-               <div class="portfolio__item--5"></div>
-               <div class="portfolio__hover">
-                   <a class="portfolio__hover__link image-link" href="img/grid8.webp"><i class="fas fa-search-plus"></i></a>
-                   <a class="portfolio__hover__link" href="https://natours22.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
-               </div>
-           </div>
-           <div class="mix portfolio__item app">
-               <div class="portfolio__item--6"></div>
-               <div class="portfolio__hover">
-                   <a class="portfolio__hover__link image-link" href="img/table.webp"><i class="fas fa-search-plus"></i></a>
-                   <a class="portfolio__hover__link" href="https://nexter22.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
-               </div>
-           </div>
-
-           <div class="mix portfolio__item web">
-                <div class="portfolio__item--17"></div>
-                <div class="portfolio__hover">
-                    <a class="portfolio__hover__link image-link" href="img/grid10.webp"><i class="fas fa-search-plus"></i></a>
-                    <a class="portfolio__hover__link" href="https://agency002.netlify.app/" target="_blank"><i class="fas fa-link"></i></a>
-                </div>
+          <div class="mix portfolio__item web">
+            <div class="portfolio__item--3"></div>
+            <div class="portfolio__hover">
+              <a class="portfolio__hover__link image-link" href="img/bootstrap2.webp"><i class="fas fa-search-plus"></i></a>
+              <a class="portfolio__hover__link" href="https://hamzgolf.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
             </div>
-    
-    
-    
-           <div class="mix portfolio__item web">
-               <div class="portfolio__item--8"></div>
-               <div class="portfolio__hover">
-                   <a class="portfolio__hover__link image-link" href="img/grid3.webp"><i class="fas fa-search-plus"></i></a>
-                   <a class="portfolio__hover__link" href="https://agency22.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
-               </div>
-           </div>
-    
-           <div class="mix portfolio__item web">
-               <div class="portfolio__item--9"></div>
-               <div class="portfolio__hover">
-                   <a class="portfolio__hover__link image-link" href="img/bootsrtap4.webp"><i class="fas fa-search-plus"></i></a>
-                   <a class="portfolio__hover__link" href="https://mizuxe33.netlify.app/" target="_blank"><i class="fas fa-link"></i></a>
-               </div>
-           </div>
-    
-           <div class="mix portfolio__item web">
-               <div class="portfolio__item--10"></div>
-               <div class="portfolio__hover">
-                   <a class="portfolio__hover__link image-link" href="img/bootstrap.webp"><i class="fas fa-search-plus"></i></a>
-                   <a class="portfolio__hover__link" href="https://glozzombs4.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
-               </div>
-           </div>
-    
-           <div class="mix portfolio__item web">
-               <div class="portfolio__item--11"></div>
-               <div class="portfolio__hover">
-                   <a class="portfolio__hover__link image-link" href="img/bootstrap3.webp"><i class="fas fa-search-plus"></i></a>
-                   <a class="portfolio__hover__link" href="https://looplab22.netlify.app/" target="_blank"><i class="fas fa-link"></i></a>
-               </div>
-           </div>
-    
-           <div class="mix portfolio__item web">
-               <div class="portfolio__item--12"></div>
-               <div class="portfolio__hover">
-                   <a class="portfolio__hover__link image-link" href="img/bootstrap5.webp"><i class="fas fa-search-plus"></i></a>
-                   <a class="portfolio__hover__link" href="https://nandine22.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
-               </div>
-           </div>
-    
-           <div class="mix portfolio__item web">
-               <div class="portfolio__item--13"></div>
-               <div class="portfolio__hover">
-                   <a class="portfolio__hover__link image-link" href="img/bootstrap7.webp"><i class="fas fa-search-plus"></i></a>
-                   <a class="portfolio__hover__link" href="https://snow22.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
-               </div>
-           </div>
-    
-           <div class="mix portfolio__item web">
-               <div class="portfolio__item--14"></div>
-               <div class="portfolio__hover">
-                   <a class="portfolio__hover__link image-link" href="img/grid2.webp"><i class="fas fa-search-plus"></i></a>
-                   <a class="portfolio__hover__link" href="https://violet-port.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
-               </div>
-           </div>
-    
-           <div class="mix portfolio__item web">
-               <div class="portfolio__item--15"></div>
-               <div class="portfolio__hover">
-                   <a class="portfolio__hover__link image-link" href="img/grid4.webp"><i class="fas fa-search-plus"></i></a>
-                   <a class="portfolio__hover__link" href="https://cuda22.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
-               </div>
-           </div>
-    
-           <div class="mix portfolio__item web">
-               <div class="portfolio__item--16"></div>
-               <div class="portfolio__hover">
-                   <a class="portfolio__hover__link image-link" href="img/grid9.webp"><i class="fas fa-search-plus"></i></a>
-                   <a class="portfolio__hover__link" href="https://rrf-traffic.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
-               </div>
-           </div>
+          </div>
 
-
-           <div class="mix portfolio__item web">
-                <div class="portfolio__item--7"></div>
-                <div class="portfolio__hover">
-                    <a class="portfolio__hover__link image-link" href="img/bootstrap8.webp"><i class="fas fa-search-plus"></i></a>
-                    <a class="portfolio__hover__link" href="https://starbella.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
-                </div>
+          <div class="mix portfolio__item web">
+            <div class="portfolio__item--18"></div>
+            <div class="portfolio__hover">
+              <a class="portfolio__hover__link image-link" href="img/grid-11.webp"><i class="fas fa-search-plus"></i></a>
+              <a class="portfolio__hover__link" href="https://96buks.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
             </div>
+          </div>
 
+          <div class="mix portfolio__item app">
+            <div class="portfolio__item--4"></div>
+            <div class="portfolio__hover">
+              <a class="portfolio__hover__link image-link" href="img/app.webp"><i class="fas fa-search-plus"></i></a>
+              <a class="portfolio__hover__link" href="https://trillo22.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
+            </div>
+          </div>
+          <div class="mix portfolio__item app">
+            <div class="portfolio__item--5"></div>
+            <div class="portfolio__hover">
+              <a class="portfolio__hover__link image-link" href="img/grid8.webp"><i class="fas fa-search-plus"></i></a>
+              <a class="portfolio__hover__link" href="https://natours22.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
+            </div>
+          </div>
+          <div class="mix portfolio__item app">
+            <div class="portfolio__item--6"></div>
+            <div class="portfolio__hover">
+              <a class="portfolio__hover__link image-link" href="img/table.webp"><i class="fas fa-search-plus"></i></a>
+              <a class="portfolio__hover__link" href="https://nexter22.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
+            </div>
+          </div>
 
-           <div class="mix portfolio__item  web">
+          <div class="mix portfolio__item web">
+            <div class="portfolio__item--17"></div>
+            <div class="portfolio__hover">
+              <a class="portfolio__hover__link image-link" href="img/grid10.webp"><i class="fas fa-search-plus"></i></a>
+              <a class="portfolio__hover__link" href="https://agency002.netlify.app/" target="_blank"><i class="fas fa-link"></i></a>
+            </div>
+          </div>
+
+          <div class="mix portfolio__item web">
+            <div class="portfolio__item--8"></div>
+            <div class="portfolio__hover">
+              <a class="portfolio__hover__link image-link" href="img/grid3.webp"><i class="fas fa-search-plus"></i></a>
+              <a class="portfolio__hover__link" href="https://agency22.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
+            </div>
+          </div>
+
+          <div class="mix portfolio__item web">
+            <div class="portfolio__item--9"></div>
+            <div class="portfolio__hover">
+              <a class="portfolio__hover__link image-link" href="img/bootsrtap4.webp"><i class="fas fa-search-plus"></i></a>
+              <a class="portfolio__hover__link" href="https://mizuxe33.netlify.app/" target="_blank"><i class="fas fa-link"></i></a>
+            </div>
+          </div>
+
+          <div class="mix portfolio__item web">
+            <div class="portfolio__item--10"></div>
+            <div class="portfolio__hover">
+              <a class="portfolio__hover__link image-link" href="img/bootstrap.webp"><i class="fas fa-search-plus"></i></a>
+              <a class="portfolio__hover__link" href="https://glozzombs4.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
+            </div>
+          </div>
+
+          <div class="mix portfolio__item web">
+            <div class="portfolio__item--11"></div>
+            <div class="portfolio__hover">
+              <a class="portfolio__hover__link image-link" href="img/bootstrap3.webp"><i class="fas fa-search-plus"></i></a>
+              <a class="portfolio__hover__link" href="https://looplab22.netlify.app/" target="_blank"><i class="fas fa-link"></i></a>
+            </div>
+          </div>
+
+          <div class="mix portfolio__item web">
+            <div class="portfolio__item--12"></div>
+            <div class="portfolio__hover">
+              <a class="portfolio__hover__link image-link" href="img/bootstrap5.webp"><i class="fas fa-search-plus"></i></a>
+              <a class="portfolio__hover__link" href="https://nandine22.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
+            </div>
+          </div>
+
+          <div class="mix portfolio__item web">
+            <div class="portfolio__item--13"></div>
+            <div class="portfolio__hover">
+              <a class="portfolio__hover__link image-link" href="img/bootstrap7.webp"><i class="fas fa-search-plus"></i></a>
+              <a class="portfolio__hover__link" href="https://snow22.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
+            </div>
+          </div>
+
+          <div class="mix portfolio__item web">
+            <div class="portfolio__item--14"></div>
+            <div class="portfolio__hover">
+              <a class="portfolio__hover__link image-link" href="img/grid2.webp"><i class="fas fa-search-plus"></i></a>
+              <a class="portfolio__hover__link" href="https://violet-port.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
+            </div>
+          </div>
+
+          <div class="mix portfolio__item web">
+            <div class="portfolio__item--15"></div>
+            <div class="portfolio__hover">
+              <a class="portfolio__hover__link image-link" href="img/grid4.webp"><i class="fas fa-search-plus"></i></a>
+              <a class="portfolio__hover__link" href="https://cuda22.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
+            </div>
+          </div>
+
+          <div class="mix portfolio__item web">
+            <div class="portfolio__item--16"></div>
+            <div class="portfolio__hover">
+              <a class="portfolio__hover__link image-link" href="img/grid9.webp"><i class="fas fa-search-plus"></i></a>
+              <a class="portfolio__hover__link" href="https://rrf-traffic.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
+            </div>
+          </div>
+
+          <div class="mix portfolio__item web">
+            <div class="portfolio__item--7"></div>
+            <div class="portfolio__hover">
+              <a class="portfolio__hover__link image-link" href="img/bootstrap8.webp"><i class="fas fa-search-plus"></i></a>
+              <a class="portfolio__hover__link" href="https://starbella.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
+            </div>
+          </div>
+
+          <div class="mix portfolio__item web">
             <div class="portfolio__item--19"></div>
             <div class="portfolio__hover">
-                <a class="portfolio__hover__link image-link" href="img/cssgrid.webp"><i class="fas fa-search-plus"></i></a>
-                <a class="portfolio__hover__link" href="https://hopler.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
+              <a class="portfolio__hover__link image-link" href="img/cssgrid.webp"><i class="fas fa-search-plus"></i></a>
+              <a class="portfolio__hover__link" href="https://hopler.netlify.app" target="_blank"><i class="fas fa-link"></i></a>
             </div>
+          </div>
         </div>
-
-       </div>
-    </div>
+      </div>
     </section>
-
-
-
 
     <!-- ########################
          Footer Section
     ############################## -->
 
     <footer class="footer">
-        <div class="row">
-            <ul class="footer__list">
-                <li class="footer__item"><a href="https://facebook.com/iamsaif6" target="_blank" class="footer__link"><i class="fab fa-facebook-f"></i></a></li>
-                <li class="footer__item"><a  class="footer__link" href="https://twitter.com/iamsaif6" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                <li class="footer__item"><a  class="footer__link" href="https://instagram.com/iamsaif6" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                <li class="footer__item"><a  class="footer__link" href="https://github.com/iamsaif6" target="_blank"><i class="fab fa-github"></i></a></li>
-            </ul>
-        </div>
-        <p class="footer__text">Copyright &copy; 2020 . Portfolio By Saif Hasan</p>
+      <div class="row">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="https://facebook.com/iamsaif6" target="_blank" class="footer__link"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="https://twitter.com/iamsaif6" target="_blank"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="https://instagram.com/iamsaif6" target="_blank"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="https://github.com/iamsaif6" target="_blank"><i class="fab fa-github"></i></a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer__text">Copyright &copy; 2020 . Portfolio By Saif Hasan</p>
     </footer>
 
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/5eb25908a1bad90e54a218a4/default';
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
-        })();
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement('script'),
+          s0 = document.getElementsByTagName('script')[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5eb25908a1bad90e54a218a4/default';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+      })();
     </script>
     <!--End of Tawk.to Script-->
 
@@ -326,5 +331,5 @@ Portfolio Section
     <script src="js/mixitup.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/app.js"></script>
-</body>
+  </body>
 </html>
